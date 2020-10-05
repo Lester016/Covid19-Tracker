@@ -11,6 +11,7 @@ import { createFilter } from "redux-persist-transform-filter";
 import HomeScreen from "./app/screens/HomeScreen";
 import { watchAuth } from "./app/store/sagas";
 import authReducer from "./app/store/reducers/auth";
+import QRCodeScreen from "./app/screens/QRCodeScreen";
 
 // For redux devtools.
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -53,7 +54,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <HomeScreen />
+        <QRCodeScreen />
         <StatusBar style="auto" />
       </PersistGate>
     </Provider>
