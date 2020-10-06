@@ -1,7 +1,8 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
 
 import Screen from "../components/Screen";
+import Text from "../components/Text";
 
 const HomeScreen = () => {
   return (
